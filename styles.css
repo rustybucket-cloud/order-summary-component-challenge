@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color:hsl(225, 100%, 94%);
+}
+
+.container {
+    margin: 5em auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+}
+.hero-image {
+    width: 100%;
+    height:auto;
+    border-radius: 15px 15px 0 0;
+}
+.container h1 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+.para {
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 0 2rem;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin: 0 auto;
+    
+}
+.plan * {
+    display: inline;
+}
+.plan a {
+    padding-left: 2rem;
+}
+.plan-text {
+    padding: 1rem;
+    padding-right: 1rem;
+}
+@media screen and (min-width:801px) {
+    .container {
+        max-width: 25rem;
+    }
+    .plan {
+        max-width: 18.43rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .container {
+        max-width: 327px;
+    }
+    .plan {
+        max-width: 18.43rem;
+    }
+}
+
+.container button {
+    display: block;
+    background-color:hsl(245, 75%, 52%);
+    padding: 1rem 3.25rem;
+    font-size: 1.25rem;
+    color: white;
+    border-radius: 10px;
+    margin: 2rem auto;
+}
+.container button:hover {
+    transform: scale(1.1);
+}
+.cancel-order {
+    text-decoration: none;
+    padding-bottom: 1.5rem;
+    display: block;
+}
+.cancel-order:hover, plan a:hover {
+    color: hsl(223, 47%, 23%);
+    transform: scale(1.1);
+}
